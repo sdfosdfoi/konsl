@@ -1,0 +1,150 @@
+/* Testimonials CSS */
+.testimonials {
+  background-color: var(--color-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial-track {
+  display: flex;
+  transition: transform var(--transition-medium);
+  margin-bottom: var(--spacing-lg);
+}
+
+.testimonial-card {
+  flex: 0 0 100%;
+  padding: var(--spacing-lg);
+  background-color: white;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.quote {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: var(--spacing-lg);
+  position: relative;
+  padding-left: var(--spacing-lg);
+}
+
+.quote::before {
+  content: '"';
+  position: absolute;
+  top: -20px;
+  left: 0;
+  font-size: 4rem;
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-family: Georgia, serif;
+}
+
+.client {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.client img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-sm);
+}
+
+.client-info h4 {
+  font-weight: 700;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.client-info p {
+  color: var(--color-text-light);
+  font-size: 0.875rem;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.slider-controls button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast);
+}
+
+.slider-controls button:hover {
+  background-color: var(--color-secondary-dark);
+}
+
+.slider-controls button span {
+  color: var(--color-text-dark);
+  font-weight: 700;
+}
+
+.slider-dots {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-border);
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.dot.active {
+  background-color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: var(--spacing-md);
+  }
+  
+  .quote {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .client {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .client-info {
+    text-align: center;
+  }
+  
+  .slider-controls button {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}

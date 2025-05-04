@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOREM - Премиальная Недвижимость</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/video-block.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <a href="/" class="logo"><h1>LOREM</h1></a>
+            <nav class="desktop-menu">
+                <a href="#about">О НАС</a>
+                <a href="#projects">ПРОЕКТЫ</a>
+                <a href="#contacts">КОНТАКТЫ</a>
+                <a href="#callback" class="btn-primary">ЗАКАЗАТЬ ЗВОНОК</a>
+            </nav>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <nav class="mobile-menu">
+        <ul>
+            <li><a href="#about">О НАС</a></li>
+            <li><a href="#projects">ПРОЕКТЫ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+            <li><a href="#callback" class="btn-primary">ЗАКАЗАТЬ ЗВОНОК</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Элитная недвижимость в центре города</h2>
+                    <p>Роскошные апартаменты с панорамным видом на город</p>
+                    <ul class="features">
+                        <li><span class="icon">✓</span> от 10 000 000 ₽ за квартиру</li>
+                        <li><span class="icon">✓</span> рассрочка 30% на 2 года</li>
+                        <li><span class="icon">✓</span> ипотека от 17% годовых</li>
+                    </ul>
+                    <div class="hero-buttons">
+                        <a href="#callback" class="btn-primary">ЗАКАЗАТЬ ЗВОНОК</a>
+                        <a href="#projects" class="btn-secondary">СМОТРЕТЬ ПРОЕКТЫ</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg" alt="Элитный жилой комплекс">
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="about">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-image">
+                        <img src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg" alt="Особенности комплекса">
+                    </div>
+                    <div class="feature-content">
+                        <div class="feature-item">
+                            <span class="icon">◆</span>
+                            <p>Премиальное расположение в историческом центре города</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">◆</span>
+                            <p>Закрытая охраняемая территория с подземным паркингом</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">◆</span>
+                            <p>Собственная инфраструктура: фитнес-центр, спа, ресторан</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon">◆</span>
+                            <p>Панорамное остекление с видом на город</p>
+                        </div>
+                    </div>
+                    <div class="feature-image">
+                        <img src="https://images.pexels.com/photos/2462015/pexels-photo-2462015.jpeg" alt="Интерьер квартиры">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Видео -->
+<section class="video-block">
+    <div class="container">
+        <div class="video-container">
+            <video class="custom-video" autoplay muted loop poster="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg">
+                <source src="https://msttestaddfiles.netlify.app/video.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+        </div>
+    </div>
+</section>
+
+
+        <section class="contact" id="contacts">
+            <div class="container">
+                <div class="contact-form">
+                    <h2>Запишитесь на просмотр</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Эл. почта" required>
+                        </div>
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Я согласен с политикой конфиденциальности</label>
+                        </div>
+                        <button type="submit" class="btn-primary">ОТПРАВИТЬ</button>
+                    </form>
+                </div>
+                <div class="contact-image">
+                    <img src="https://i.ytimg.com/vi/CJSeNi5-Nu0/maxresdefault.jpg" alt="Агент по недвижимости">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>LOREM</h2>
+                    <p>Элитная недвижимость в самом сердце города</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>О компании</h3>
+                        <ul>
+                            <li><a href="#about">О нас</a></li>
+                            <li><a href="#projects">Проекты</a></li>
+                            <li><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Контакты</h3>
+                        <ul>
+                            <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+                            <li><a href="mailto:info@lorem.ru">info@lorem.ru</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 LOREM. Все права защищены</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+                    <a href="#" target="_blank"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" target="_blank"><img src="assets/icons/telegram.svg" alt="Telegram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/video-player.js"></script>
+</body>
+</html>
